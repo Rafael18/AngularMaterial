@@ -1,0 +1,52 @@
+<div class="datepicker">
+  <!-- <h1>Date Picker - Padrão</h1>
+
+  <mat-form-field>
+    <mat-label>Informe a Data</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <br> <br> <br> -->
+
+  <!-- <h1>Date Picker - StartDate, minDate e maxDate</h1>
+
+  <mat-form-field>
+    <mat-label>Informe a Data</mat-label>
+    <input
+      matInput
+      [matDatepicker]="picker"
+      [min] ="minDate"
+      [max]="maxDate"
+     >
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker
+      #picker
+      [startAt]="startDate"
+      [touchUi]="isToucheDevice"
+    ></mat-datepicker>
+  </mat-form-field>
+  <br> <br> <br> -->
+
+  <h1>Date Picker - Utilizando o MomentJs</h1>
+
+  <mat-form-field>
+    <mat-label>Informe a Data</mat-label>
+    <input
+      matInput
+      [matDatepicker]="picker"
+      [min] ="minDate"
+      [max]="maxDate"
+     >
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker
+      #picker
+      [startAt]="startDate"
+      [touchUi]="isToucheDevice"
+    ></mat-datepicker>
+  </mat-form-field>
+
+</div>

@@ -1,0 +1,102 @@
+<div class="tabs">
+  <h1>Simple tab</h1>
+
+  <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" animationDuration="3000ms">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">person</mat-icon>
+         Dados Pessoais
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">pin_drop</mat-icon>
+         Endereço
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">settings</mat-icon>
+         Configurações
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
+  <br><br><br>
+
+  <h1>Tabs - Stretch and Below</h1>
+  <mat-tab-group animationDuration="3000ms"
+    mat-stretch-tabs
+    class="mat-elavation-z4"
+    headerPosition="below">
+
+    <mat-tab label="First">
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">home</mat-icon>
+         First
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Second">
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">person</mat-icon>
+         Pesoa
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="First">
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">settings</mat-icon>
+         First
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
+
+  <br><br><br>
+
+  <h1>Tabs - Color</h1>
+  <mat-tab-group animationDuration="3000ms"
+    color="warn"
+    backgroundColor="primary">
+
+
+    <mat-tab label="First">
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">home</mat-icon>
+         Home
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab>
+      <div class="mat-tab">
+        <ng-template mat-tab-label>
+          <mat-icon class="tab-icon">person</mat-icon>
+           Pessoa
+        </ng-template>
+        <h1>Toff Toff</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Deleniti deserunt voluptates recusandae quos fuga maiores,
+          nostrum quia excepturi? Quae quos corporis labore facere
+          similique animi maxime mollitia sed perferendis reprehenderit?
+        </p>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="First">
+      <div class="mat-tab">
+        <ng-template mat-tab-label>
+          <mat-icon class="tab-icon">settings</mat-icon>
+          Configuração
+        </ng-template>
+        <h1>BilBil</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Deleniti deserunt voluptates recusandae quos fuga maiores,
+          nostrum quia excepturi? Quae quos corporis labore facere
+          similique animi maxime mollitia sed perferendis reprehenderit?
+        </p>
+      </div>
+    </mat-tab>
+
+  </mat-tab-group>
+</div>

@@ -1,0 +1,57 @@
+<div class="d-material">
+  <p class="p-material">No Material.modules -> Existe um provider que aplica outline por padrão em todos os campos</p>
+</div>
+<div class="inputs-material">
+  <h1>Inputs</h1>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput  type="text">
+  </mat-form-field>
+  <br>
+  <mat-form-field floatLabel="always">
+    <mat-label>Name</mat-label>
+    <input matInput  type="text">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput  type="text">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field floatLabel="always" appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput  type="text">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Name">
+    <mat-icon color="primary" matPrefix>recycling</mat-icon>
+  </mat-form-field>
+
+  <br>
+  <mat-form-field>
+    <mat-label>Dog</mat-label>
+    <input matInput placeholder="Name">
+    <mat-icon color="primary" matSuffix>pets</mat-icon>
+  </mat-form-field>
+
+  <br>
+  <mat-form-field>
+    <mat-label>Dog</mat-label>
+    <input matInput placeholder="Name" [(ngModel)]="value">
+    <button color="warn" *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <br>
+  <mat-form-field>
+    <mat-label>Hint</mat-label>
+    <input #userName matInput placeholder="Name" maxlength="10">
+    <mat-hint align="start">{{ userName.maxLength}}/10</mat-hint>
+    <mat-hint align="end">{{ userName.value.length}}/10</mat-hint>
+  </mat-form-field>
+</div>
