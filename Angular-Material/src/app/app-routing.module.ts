@@ -6,6 +6,7 @@ import { FormFieldInputComponent } from './form-field-input/form-field-input.com
 import { TabComponent } from './tab/tab.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 const routes: Routes = [
   {path:'buttonIcon', component: ButtonsIconsComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'tab', component: TabComponent},
   {path:'datepicker', component: DatepickerComponent},
   {path:'snackbar', component: SnackbarComponent},
+  {path:'dialog', component: DialogComponent},
 ];
 
 @NgModule({

@@ -1,0 +1,11 @@
+<div class="dialog">
+  <h1>Dialog</h1>
+
+  <button mat-raised-button color="primary" (click)="openDialog()">
+    <mat-icon>favorite</mat-icon>
+    My favorite Pet
+  </button>
+  <br>
+  <br>
+  <p *ngIf="mensagem">{{ mensagem }}</p>
+</div>
